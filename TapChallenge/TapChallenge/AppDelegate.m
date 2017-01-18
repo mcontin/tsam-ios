@@ -17,6 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //int score = [[NSUserDefaults standardUserDefaults] integerForKey: @"Score"];
+    
     return YES;
 }
 

@@ -10,6 +10,13 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, weak) IBOutlet UILabel *tapsCountLabel;
+
+@property (nonatomic, weak) IBOutlet UILabel *timeLabel;
+
+-(void)initializeGame;
+
+-(IBAction)buttonPressed:(id)sender;
 
 @end
 
