@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49710C9C1E40852D00D64CF1 /* SizeClasses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49710C9B1E40852D00D64CF1 /* SizeClasses.storyboard */; };
+		49710C9F1E408CFF00D64CF1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49710C9E1E408CFF00D64CF1 /* MapKit.framework */; };
 		49ECAF331E38B58200111EC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49ECAF321E38B58200111EC7 /* main.m */; };
 		49ECAF361E38B58200111EC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49ECAF351E38B58200111EC7 /* AppDelegate.m */; };
 		49ECAF391E38B58200111EC7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49ECAF381E38B58200111EC7 /* ViewController.m */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49710C9B1E40852D00D64CF1 /* SizeClasses.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SizeClasses.storyboard; sourceTree = "<group>"; };
+		49710C9E1E408CFF00D64CF1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		49ECAF2E1E38B58200111EC7 /* DemoCrispyBacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoCrispyBacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49ECAF321E38B58200111EC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		49ECAF341E38B58200111EC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,17 +37,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49710C9F1E408CFF00D64CF1 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49710C9D1E408CFF00D64CF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49710C9E1E408CFF00D64CF1 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		49ECAF251E38B58200111EC7 = {
 			isa = PBXGroup;
 			children = (
 				49ECAF301E38B58200111EC7 /* DemoCrispyBacon */,
 				49ECAF2F1E38B58200111EC7 /* Products */,
+				49710C9D1E408CFF00D64CF1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +76,7 @@
 				49ECAF381E38B58200111EC7 /* ViewController.m */,
 				49ECAF3A1E38B58200111EC7 /* Main.storyboard */,
 				49ECAF311E38B58200111EC7 /* Supporting Files */,
+				49710C9B1E40852D00D64CF1 /* SizeClasses.storyboard */,
 			);
 			path = DemoCrispyBacon;
 			sourceTree = "<group>";
@@ -111,6 +126,11 @@
 					49ECAF2D1E38B58200111EC7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -139,6 +159,7 @@
 			files = (
 				49ECAF411E38B58200111EC7 /* LaunchScreen.storyboard in Resources */,
 				49ECAF3E1E38B58200111EC7 /* Assets.xcassets in Resources */,
+				49710C9C1E40852D00D64CF1 /* SizeClasses.storyboard in Resources */,
 				49ECAF3C1E38B58200111EC7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +330,7 @@
 				49ECAF471E38B58200111EC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
