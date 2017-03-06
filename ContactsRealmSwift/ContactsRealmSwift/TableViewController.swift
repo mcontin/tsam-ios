@@ -7,22 +7,58 @@
 //
 
 import UIKit
+import RealmSwift
 
 class TableViewController: UITableViewController {
     
     var contacts: [Contact] = [];
+    var realm: Realm? = nil;
+    var contactsFromDb: Results<Contact>? = nil;
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let mario = Contact(name: "Mario", surname: "Rossi", age: 32);
-        let michele = Contact(name: "Michele", surname: "Bravo", age: 21);
-        let mattia = Contact(name: "Mattia", surname: "Asd", age: 18);
-        let federico = Contact(name: "Fede", surname: "Llalala", age: 41);
-        let carlo = Contact(name: "Carlo", surname: "Lodododdo", age: 28);
+        // Get the default Realm
+        realm = try! Realm()
+        // You only need to do this once (per thread)
         
-        contacts += [mario, michele, mattia, federico, carlo];
+        contactsFromDb = (realm?.objects(Contact.self))! // retrieves all Dogs from the default Realm
         
+        if((contactsFromDb?.count)! <= 0) {
+            initDb()
+        } else {
+            print("Records found in the database: ");
+            for contact in contactsFromDb! {
+                print(contact);
+                contacts.append(contact);
+            }
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("appeared")
+        tableView.reloadData()
+    }
+    
+    func initDb() {
+        print("Initializing database")
+        
+        let mario = Contact(withName: "Mario", surname: "Rossi", andAge: 32)
+        let michele = Contact(withName: "Michele", surname: "Bravo", andAge: 21)
+        let mattia = Contact(withName: "Mattia", surname: "Asd", andAge: 18)
+        let federico = Contact(withName: "Fede", surname: "Llalala", andAge: 41)
+        let carlo = Contact(withName: "Carlo", surname: "Lodododdo", andAge: 28)
+        
+        contacts += [mario, michele, mattia, federico, carlo]
+        
+        // Add to the Realm inside a transaction
+        for contact in contacts {
+            try! realm?.write {
+                realm?.add(contact)
+            }
+        }
+        
+        print("Database initialized")
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,17 +75,17 @@ class TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return contacts.count;
+        return (contactsFromDb?.count)!;
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-        cell.textLabel?.text = contacts[indexPath.row].simpleDescription();
+        cell.textLabel?.text = contactsFromDb?[indexPath.row].simpleDescription();
         
         return cell
     }
-
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -58,17 +94,18 @@ class TableViewController: UITableViewController {
     }
     */
 
-    /*
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
+            
+            realm?.beginWrite()
+            realm?.delete((contactsFromDb?[indexPath.row])!)
+            try! realm?.commitWrite()
+            
             tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
-    */
 
     /*
     // Override to support rearranging the table view.

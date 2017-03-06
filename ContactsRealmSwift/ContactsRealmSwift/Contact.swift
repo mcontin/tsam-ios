@@ -7,28 +7,24 @@
 //
 
 import Foundation
+import RealmSwift
 
-
-class Contact {
+class Contact: Object {
     
-    var name: String;
-    var surname: String;
-    var age: Int;
+    // dynamic serve perchè object è utilizzata in codice obj-c di realm
+    dynamic var name = "";
+    dynamic var surname = "";
+    dynamic var age = -1;
     
-    init() {
-        self.name = "";
-        self.surname = "";
-        self.age = -1;
-    }
-    
-    init(name: String, surname: String, age: Int) {
+    convenience init(withName name: String, surname: String, andAge age: Int) {
+        self.init();
         self.name = name;
         self.surname = surname;
         self.age = age;
     }
-    
+ 
     func simpleDescription() -> String {
         return "\(name) \(surname), \(age)";
-    }
+     }
 
 }

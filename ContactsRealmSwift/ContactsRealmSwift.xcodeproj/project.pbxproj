@@ -17,6 +17,7 @@
 		490A97FC1E5DA3D70052A258 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 490A97F91E5DA3D70052A258 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		490A97FD1E5DA3D70052A258 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 490A97FA1E5DA3D70052A258 /* RealmSwift.framework */; };
 		490A97FE1E5DA3D70052A258 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 490A97FA1E5DA3D70052A258 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		49A3FBE31E646E66007D9AF6 /* ContactAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A3FBE21E646E66007D9AF6 /* ContactAddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +46,7 @@
 		490A97F71E5D9B280052A258 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		490A97F91E5DA3D70052A258 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		490A97FA1E5DA3D70052A258 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		49A3FBE21E646E66007D9AF6 /* ContactAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactAddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				490A97E31E5D8DA80052A258 /* AppDelegate.swift */,
 				490A97E71E5D8DA80052A258 /* Main.storyboard */,
+				49A3FBE21E646E66007D9AF6 /* ContactAddViewController.swift */,
 				490A97EA1E5D8DA80052A258 /* Assets.xcassets */,
 				490A97EC1E5D8DA80052A258 /* LaunchScreen.storyboard */,
 				490A97EF1E5D8DA80052A258 /* Info.plist */,
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				490A97F81E5D9B280052A258 /* Contact.swift in Sources */,
+				49A3FBE31E646E66007D9AF6 /* ContactAddViewController.swift in Sources */,
 				490A97E41E5D8DA80052A258 /* AppDelegate.swift in Sources */,
 				490A97F61E5D98790052A258 /* TableViewController.swift in Sources */,
 			);
