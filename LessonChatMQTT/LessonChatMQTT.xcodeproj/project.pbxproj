@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49E4AC6D1EEAD8560064EC7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E4AC6C1EEAD8560064EC7C /* AppDelegate.swift */; };
+		49E4AC6F1EEAD8560064EC7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E4AC6E1EEAD8560064EC7C /* ViewController.swift */; };
+		49E4AC721EEAD8560064EC7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E4AC701EEAD8560064EC7C /* Main.storyboard */; };
+		49E4AC751EEAD8560064EC7C /* LessonChatMQTT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49E4AC731EEAD8560064EC7C /* LessonChatMQTT.xcdatamodeld */; };
+		49E4AC771EEAD8560064EC7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E4AC761EEAD8560064EC7C /* Assets.xcassets */; };
+		49E4AC7A1EEAD8560064EC7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E4AC781EEAD8560064EC7C /* LaunchScreen.storyboard */; };
+		4D7C0C9F0B5E19C86A9234FE /* Pods_LessonChatMQTT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BF95B0498FDD31370466F3 /* Pods_LessonChatMQTT.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		24BF95B0498FDD31370466F3 /* Pods_LessonChatMQTT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LessonChatMQTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E4AC691EEAD8550064EC7C /* LessonChatMQTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LessonChatMQTT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E4AC6C1EEAD8560064EC7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49E4AC6E1EEAD8560064EC7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		49E4AC711EEAD8560064EC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49E4AC741EEAD8560064EC7C /* LessonChatMQTT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LessonChatMQTT.xcdatamodel; sourceTree = "<group>"; };
+		49E4AC761EEAD8560064EC7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49E4AC791EEAD8560064EC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49E4AC7B1EEAD8560064EC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6144845710ADB69A18D296F1 /* Pods-LessonChatMQTT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LessonChatMQTT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LessonChatMQTT/Pods-LessonChatMQTT.debug.xcconfig"; sourceTree = "<group>"; };
+		EB6386C5AC04963A018D89BF /* Pods-LessonChatMQTT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LessonChatMQTT.release.xcconfig"; path = "Pods/Target Support Files/Pods-LessonChatMQTT/Pods-LessonChatMQTT.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49E4AC661EEAD8550064EC7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D7C0C9F0B5E19C86A9234FE /* Pods_LessonChatMQTT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49E4AC601EEAD8550064EC7C = {
+			isa = PBXGroup;
+			children = (
+				49E4AC6B1EEAD8550064EC7C /* LessonChatMQTT */,
+				49E4AC6A1EEAD8550064EC7C /* Products */,
+				9248CE0CE9AC1F460262D576 /* Pods */,
+				4FCDAE2C75815AD0DFA0C32A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		49E4AC6A1EEAD8550064EC7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49E4AC691EEAD8550064EC7C /* LessonChatMQTT.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49E4AC6B1EEAD8550064EC7C /* LessonChatMQTT */ = {
+			isa = PBXGroup;
+			children = (
+				49E4AC6C1EEAD8560064EC7C /* AppDelegate.swift */,
+				49E4AC6E1EEAD8560064EC7C /* ViewController.swift */,
+				49E4AC701EEAD8560064EC7C /* Main.storyboard */,
+				49E4AC761EEAD8560064EC7C /* Assets.xcassets */,
+				49E4AC781EEAD8560064EC7C /* LaunchScreen.storyboard */,
+				49E4AC7B1EEAD8560064EC7C /* Info.plist */,
+				49E4AC731EEAD8560064EC7C /* LessonChatMQTT.xcdatamodeld */,
+			);
+			path = LessonChatMQTT;
+			sourceTree = "<group>";
+		};
+		4FCDAE2C75815AD0DFA0C32A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24BF95B0498FDD31370466F3 /* Pods_LessonChatMQTT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9248CE0CE9AC1F460262D576 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6144845710ADB69A18D296F1 /* Pods-LessonChatMQTT.debug.xcconfig */,
+				EB6386C5AC04963A018D89BF /* Pods-LessonChatMQTT.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49E4AC681EEAD8550064EC7C /* LessonChatMQTT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49E4AC7E1EEAD8560064EC7C /* Build configuration list for PBXNativeTarget "LessonChatMQTT" */;
+			buildPhases = (
+				5BA36D3589982E0222D9219C /* [CP] Check Pods Manifest.lock */,
+				49E4AC651EEAD8550064EC7C /* Sources */,
+				49E4AC661EEAD8550064EC7C /* Frameworks */,
+				49E4AC671EEAD8550064EC7C /* Resources */,
+				C4B83E9D84AADA70ACE8DFAB /* [CP] Embed Pods Frameworks */,
+				1EAB8ADC521BE5EC759D701B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LessonChatMQTT;
+			productName = LessonChatMQTT;
+			productReference = 49E4AC691EEAD8550064EC7C /* LessonChatMQTT.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49E4AC611EEAD8550064EC7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Mattia Contin";
+				TargetAttributes = {
+					49E4AC681EEAD8550064EC7C = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 49E4AC641EEAD8550064EC7C /* Build configuration list for PBXProject "LessonChatMQTT" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49E4AC601EEAD8550064EC7C;
+			productRefGroup = 49E4AC6A1EEAD8550064EC7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49E4AC681EEAD8550064EC7C /* LessonChatMQTT */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49E4AC671EEAD8550064EC7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E4AC7A1EEAD8560064EC7C /* LaunchScreen.storyboard in Resources */,
+				49E4AC771EEAD8560064EC7C /* Assets.xcassets in Resources */,
+				49E4AC721EEAD8560064EC7C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EAB8ADC521BE5EC759D701B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LessonChatMQTT/Pods-LessonChatMQTT-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BA36D3589982E0222D9219C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C4B83E9D84AADA70ACE8DFAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LessonChatMQTT/Pods-LessonChatMQTT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49E4AC651EEAD8550064EC7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E4AC6F1EEAD8560064EC7C /* ViewController.swift in Sources */,
+				49E4AC6D1EEAD8560064EC7C /* AppDelegate.swift in Sources */,
+				49E4AC751EEAD8560064EC7C /* LessonChatMQTT.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		49E4AC701EEAD8560064EC7C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49E4AC711EEAD8560064EC7C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		49E4AC781EEAD8560064EC7C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49E4AC791EEAD8560064EC7C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49E4AC7C1EEAD8560064EC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49E4AC7D1EEAD8560064EC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49E4AC7F1EEAD8560064EC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6144845710ADB69A18D296F1 /* Pods-LessonChatMQTT.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LessonChatMQTT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mc.LessonChatMQTT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		49E4AC801EEAD8560064EC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB6386C5AC04963A018D89BF /* Pods-LessonChatMQTT.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LessonChatMQTT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mc.LessonChatMQTT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49E4AC641EEAD8550064EC7C /* Build configuration list for PBXProject "LessonChatMQTT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49E4AC7C1EEAD8560064EC7C /* Debug */,
+				49E4AC7D1EEAD8560064EC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49E4AC7E1EEAD8560064EC7C /* Build configuration list for PBXNativeTarget "LessonChatMQTT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49E4AC7F1EEAD8560064EC7C /* Debug */,
+				49E4AC801EEAD8560064EC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		49E4AC731EEAD8560064EC7C /* LessonChatMQTT.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				49E4AC741EEAD8560064EC7C /* LessonChatMQTT.xcdatamodel */,
+			);
+			currentVersion = 49E4AC741EEAD8560064EC7C /* LessonChatMQTT.xcdatamodel */;
+			path = LessonChatMQTT.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 49E4AC611EEAD8550064EC7C /* Project object */;
+}

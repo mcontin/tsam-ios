@@ -20,8 +20,25 @@ class TableViewController: UITableViewController {
         
         // Get the default Realm
         realm = try! Realm()
-        // You only need to do this once (per thread)
         
+        let personOne = Person(id: "0")
+        
+        let dogOne = Dog(id: "0", name: "a")
+        let dogTwo = Dog(id: "1", name: "b")
+        let dogThree = Dog(id: "2", name: "c")
+        
+        personOne.dogs.append(dogOne)
+        personOne.dogs.append(dogTwo)
+        personOne.dogs.append(dogThree)
+        
+        try! realm?.write {
+            realm?.add(personOne)
+        }
+        
+        debugPrint(realm?.objects(Dog.self))
+        
+        // You only need to do this once (per thread)
+        /*
         contactsFromDb = (realm?.objects(Contact.self))! // retrieves all Dogs from the default Realm
         
         if((contactsFromDb?.count)! <= 0) {
@@ -33,6 +50,7 @@ class TableViewController: UITableViewController {
                 contacts.append(contact);
             }
         }
+         */
     }
     
     override func viewWillAppear(_ animated: Bool) {

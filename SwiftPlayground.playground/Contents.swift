@@ -156,3 +156,38 @@ struct Card {
 let dueDiPicche = Card(rank: Rank.secondo, suit: Suit.cuori);
 dueDiPicche.simpleDescription();
 
+
+extension Double {
+    /// Rounds the double to decimal places value
+    func roundTo(places:Int) -> Double {
+        let divisor = pow(10.0, Double(places))
+        return (self * divisor).rounded() / divisor
+    }
+}
+let x = Double(123 * 10).rounded() / 10
+print(x)
+
+
+
+
+class SmallMeal {
+    var localId: String
+    var uuid: String
+    var fullDate: String
+    var userId: String
+    
+    
+    init(localId: String, uuid: String, fullDate: String, userId: String) {
+        self.localId = localId
+        self.uuid = uuid
+        self.fullDate = fullDate
+        self.userId = userId
+    }
+    
+    
+}
+
+
+
+
+
